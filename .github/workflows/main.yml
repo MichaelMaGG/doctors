@@ -37,7 +37,7 @@ jobs:
 
       # Build project
       - name: Build project with Maven
-        run: mvn clean package -Dmaven.test.skip=true
+        run: mvn -X clean package -Dmaven.test.skip=true
 
       # Upload to local tomcat
       - name: Upload war to tomcat
