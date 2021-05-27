@@ -7,13 +7,9 @@ on:
   workflow_dispatch:
     inputs:
       name:
-        description: 'Person to greet'
+        description: 'Build environment'
         required: true
-        default: 'Mona the Octocat'
-      home:
-        description: 'location'
-        required: false
-        default: 'The Octoverse'
+        default: 'dev'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -24,6 +20,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Print the parameters
+      - run: |
+          echo "This build will deploy to ${{ github.event.inputs.name }}!"
+    
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v2
@@ -37,14 +37,14 @@ jobs:
 
       # Build project
       - name: Build project with Maven
-        run: mvn clean package -Dmaven.test.skip=true
+        run: mvn clean package -Dmaven.test.skip=true -P"${{ github.event.inputs.name }}"
 
       # Upload to local tomcat
       - name: Upload war to tomcat
         uses: garygrossgarten/github-action-scp@release
         with:
-          local: 'target/dspace.war'
-          remote: 'D:\software\tomcat9\webapps'
+          local: 'target/app.war'
+          remote: '/var/software/tomcat/webapps'
           host: ${{ secrets.LOCAL_HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
