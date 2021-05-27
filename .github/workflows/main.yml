@@ -5,15 +5,15 @@ name: Build project and deploy on local environment
 # Controls when the action will run.
 on:
   workflow_dispatch:
-  inputs:
-    name:
-      description: 'Person to greet'
-      required: true
-      default: 'Mona the Octocat'
-    home:
-      description: 'location'
-      required: false
-      default: 'The Octoverse'
+    inputs:
+      name:
+        description: 'Person to greet'
+        required: true
+        default: 'Mona the Octocat'
+      home:
+        description: 'location'
+        required: false
+        default: 'The Octoverse'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
