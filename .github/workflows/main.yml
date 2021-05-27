@@ -37,14 +37,14 @@ jobs:
 
       # Build project
       - name: Build project with Maven
-        run: mvn clean package -Dmaven.test.skip=true -P"${{ github.event.inputs.name }}"
+        run: mvn clean package -Dmaven.test.skip=true
 
       # Upload to local tomcat
       - name: Upload war to tomcat
         uses: garygrossgarten/github-action-scp@release
         with:
           local: 'target/app.war'
-          remote: '/var/software/tomcat/webapps'
+          remote: '/Users/michael/Documents/soft/tomcat9/webapps'
           host: ${{ secrets.LOCAL_HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
