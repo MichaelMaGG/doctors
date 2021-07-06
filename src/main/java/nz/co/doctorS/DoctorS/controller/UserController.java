@@ -9,7 +9,7 @@ import java.net.InetAddress;
 public class UserController {
 
     @RequestMapping("/user")
-    public String index() throws Exception {
+    public String user() throws Exception {
         return "hello from " + InetAddress.getLocalHost().getHostAddress();
     }
 

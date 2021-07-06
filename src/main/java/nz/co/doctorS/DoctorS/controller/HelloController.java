@@ -9,7 +9,7 @@ import java.net.InetAddress;
 public class HelloController {
 
     @RequestMapping("/hello")
-    public String index() throws Exception {
+    public String hello() throws Exception {
         return "hello from " + InetAddress.getLocalHost().getHostAddress();
     }
 
