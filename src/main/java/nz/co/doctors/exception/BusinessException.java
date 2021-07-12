@@ -1,4 +1,4 @@
-package nz.co.doctorS.DoctorS.exception;
+package nz.co.doctors.exception;
 
 public class BusinessException extends Exception {
 

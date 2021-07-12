@@ -11,6 +11,6 @@ ENV JAVA_OPTS="" \
 MAINTAINER michaelggmanz@gmail.com
 
 VOLUME /tmp
-COPY target/DoctorS-0.0.1.jar doctors.jar
+COPY target/doctors-0.0.1.jar doctors.jar
 ENTRYPOINT ["java", "-jar", "/doctors.jar"]
 EXPOSE 8090
