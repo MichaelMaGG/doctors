@@ -1,9 +1,9 @@
-package nz.co.doctorS.DoctorS.exception;
+package nz.co.doctors.exception;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
-import nz.co.doctorS.DoctorS.model.ResultVO;
+import nz.co.doctors.model.ResultVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;

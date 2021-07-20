@@ -1,4 +1,4 @@
-package nz.co.doctorS.DoctorS.controller;
+package nz.co.doctors.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

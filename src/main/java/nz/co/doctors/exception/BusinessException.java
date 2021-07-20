@@ -1,7 +1,7 @@
-package nz.co.doctorS.DoctorS.exception;
+package nz.co.doctors.exception;
 
 import lombok.Getter;
-import nz.co.doctorS.DoctorS.model.ResultCode;
+import nz.co.doctors.model.ResultCode;
 import org.apache.commons.lang3.StringUtils;
 
 import java.text.MessageFormat;

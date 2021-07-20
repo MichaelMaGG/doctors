@@ -1,4 +1,4 @@
-package nz.co.doctorS.DoctorS.model;
+package nz.co.doctors.model;
 
 import lombok.Getter;
 

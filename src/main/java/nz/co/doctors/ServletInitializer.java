@@ -1,4 +1,4 @@
-package nz.co.doctorS.DoctorS;
+package nz.co.doctors;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

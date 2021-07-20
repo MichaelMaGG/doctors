@@ -1,8 +1,8 @@
-package nz.co.doctorS.DoctorS.exception;
+package nz.co.doctors.exception;
 
 import lombok.extern.slf4j.Slf4j;
-import nz.co.doctorS.DoctorS.model.ResultCode;
-import nz.co.doctorS.DoctorS.model.ResultVO;
+import nz.co.doctors.model.ResultCode;
+import nz.co.doctors.model.ResultVO;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 

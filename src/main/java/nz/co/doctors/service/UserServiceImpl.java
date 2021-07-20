@@ -1,4 +1,4 @@
-package nz.co.doctorS.DoctorS.service;
+package nz.co.doctors.service;
 
 import org.springframework.stereotype.Service;
 

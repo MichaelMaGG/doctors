@@ -4,7 +4,7 @@
     <Properties>
         <Property name="App">doctors</Property>
         <Property name="localLogDir">logs</Property>
-        <Property name="logDir">/var/logs</Property>
+        <Property name="logDir">/Users/michael/var/logs</Property>
         <Property name="splitSize">30 MB</Property>
     </Properties>
 

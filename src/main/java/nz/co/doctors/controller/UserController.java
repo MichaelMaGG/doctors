@@ -1,8 +1,8 @@
-package nz.co.doctorS.DoctorS.controller;
+package nz.co.doctors.controller;
 
-import nz.co.doctorS.DoctorS.model.ResultCode;
-import nz.co.doctorS.DoctorS.model.ResultVO;
-import nz.co.doctorS.DoctorS.model.User;
+import nz.co.doctors.model.ResultCode;
+import nz.co.doctors.model.ResultVO;
+import nz.co.doctors.model.User;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.InetAddress;
@@ -17,14 +17,14 @@ public class UserController {
     }
 
     @CrossOrigin
-    @RequestMapping(path = "/user", method = RequestMethod.GET)
+    @RequestMapping(path = "/user0", method = RequestMethod.GET)
     public ResultVO get() {
 
         return new ResultVO(ResultCode.SUCCESS, new User());
     }
 
     @CrossOrigin
-    @RequestMapping(path = "/user", method = RequestMethod.PUT)
+    @RequestMapping(path = "/user1", method = RequestMethod.PUT)
     public ResultVO put(@RequestParam User user) {
 
         System.out.println("user:" + user);
@@ -33,7 +33,7 @@ public class UserController {
     }
 
     @CrossOrigin
-    @RequestMapping(path="/user", method= RequestMethod.POST)
+    @RequestMapping(path="/user2", method= RequestMethod.POST)
     public ResultVO add(@RequestBody User user) {
 
         System.out.println("user:" + user);
